@@ -1,0 +1,24 @@
+        <div class="gazooies-block">
+          <% @gazooiesList.each do |gazooies| %>
+              <% if @gazooiesList %>
+                  <% @author.each do |user| %>
+                    <% if gazooies.user_id  ==  user.id%>
+                        <div class="gazooy-block media">
+                          <div class="media-left">
+                            <a href="#" class="avatar">
+                              <%= image_tag(user.avatar.to_s, class: "avatar", width: 100) %>
+                            </a>
+                          </div>
+                          <div class="media-body">
+                            <%= gazooies.text %>
+                          </div>
+                        </div>
+                      <% end %>
+                  <% end %>
+              <% else %>
+                  No gazooie found!
+              <% end %>
+          <% end %>
+        </div>
+
+

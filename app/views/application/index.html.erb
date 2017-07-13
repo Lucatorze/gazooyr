@@ -1,0 +1,31 @@
+
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="well">
+        Tendances
+      </div>
+      <div class="well">
+        <h3>Les derniers gazooies</h3>
+
+        <% @gazooies.first(3).each do |gazooies| %>
+            <%= gazooies.text %>
+            <hr>
+        <% end %>
+      </div>
+      <div class="well">
+
+      </div>
+    </div>
+
+    <div class="col-md-8">
+      <div class="jumbotron">
+        <h1>You're on Gazooyr !</h1>
+        <p>Le twitter qu'il est vachement plus mieux</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
